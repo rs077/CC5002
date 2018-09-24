@@ -8,21 +8,30 @@
     <h1>¡Arma tu Pizza!</h1>      
        <form action="#" method="post"> 
         <label for="name">Nombre</label>
-        <input type="text" name="nombre" size="30" maxlength="25" id="name" value="name">
+        <input type="text" name="nombre" size="30" maxlength="25" id="name"><br>
         <label for="phone">Teléfono</label>
-        <input type="text" name="nombreTelefono" size="25" id="phone" value="phone">
+        <input type="text" name="nombreTelefono" size="25" id="phone"><br>
         <label for="adress">Dirección</label>
-        <input type="text" name="direccion" id="adress" maxlength="200" value="adress">
+        <input type="text" name="direccion" id="adress" maxlength="200"><br>
         <label for="comuna">Comuna</label>
          <select name="comuna" id="comuna">
             <option value="1000">Santiago</option>
             <option value="1010">Providencia</option>
             <option value="1011">Recoleta</option>
-          </select> 
-        <label for="typedough">Tipo de Masa</label>
-        <input id="typedough" type="radio" name="masa" value="md"> Masa delgada<br>
-        <input id="typedough" type="radio" name="masa" value="mn" checked> Masa normal<br>
-        <input id="typedough" type="radio" name="masa" value="mm" checked> Masa merquén<br>
+          </select><br>
+        <label for="typedough">Tipo de Masa</label><br>
+        <input id="typedough" type="radio" name="masa" value="mdelgada"> Masa delgada<br>
+        <input id="typedough" type="radio" name="masa" value="mnormal" checked> Masa normal<br>
+        <input id="typedough" type="radio" name="masa" value="mmerquen" checked> Masa merquen<br>
+        <label for="ingredients">Ingredientes</label><br>
+        <input id="ingredients" type="checkbox" name="ingredientes" value="peperonni"> Peperonni<br>
+        <input id="ingredients" type="checkbox" name="ingredientes" value="aceitunas" checked> Aceitunas<br>
+        <input id="ingredients" type="checkbox" name="ingredientes" value="queso" checked> Queso<br>
+        <input id="ingredients" type="checkbox" name="ingredientes" value="carne" checked> Carne<br>
+        <label for="comment">Comentario</label>
+        <textarea id="comment" name="comentario" rows="10" cols="40">
+        </textarea><br>
+        <input type="submit" value="Enviar mi pedido">
        </form>
   </body>  
 </html>
