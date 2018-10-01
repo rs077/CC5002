@@ -10,37 +10,46 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-
-    <!-- Links -->
     <ul class="navbar-nav">
         <li class="nav-item">
-            <button class="bg-info" type="button" onclick="document.getElementById('agregarViaje').innerHTML
-            = Date()">Agregar Viaje</button>
+            <button type="button" class="btn btn-info" data-toggle="collapse"
+                    data-target="#agregarViaje">Agregar Viaje</button>
         </li>
         <li class="nav-item">
-            <button class="bg-info" type="button" onclick="document.getElementById('agregarEncargo').innerHTML
-            = Date()">Agregar Encargo</button>
+            <button type="button" class="btn btn-info" data-toggle="collapse"
+                    data-target="#agregarEncargo">Agregar Encargo</button>
         </li>
         <li class="nav-item">
-            <button class="bg-info" type="button" onclick="document.getElementById('verViaje').innerHTML
-            = Date()">Ver Viajes</button>
+            <button type="button" class="btn btn-info" data-toggle="collapse"
+                    data-target="#verViajes">Ver Viajes</button>
         </li>
         <li class="nav-item">
-            <button class="bg-info" type="button" onclick="document.getElementById('verEncargo').innerHTML
-            = Date()">Ver Encargos</button>
+            <button type="button" class="btn btn-info" data-toggle="collapse"
+                    data-target="#verEncargos">Ver Encargos</button>
+        </li>
     </ul>
 </nav>
-<ul>
-    <li id="agregarViaje"></li>
-</ul>
-<ul>
-    <li id="agregarEncargo"></li>
-</ul>
-<ul>
-    <li id="verViaje"></li>
-</ul>
-<ul>
-    <li id="verEncargo"></li>
-</ul>
+<div class="container">
+    <ul>
+        <div id="agregarViaje" class="collapse">
+            form agregar viaje
+        </div>
+    </ul>
+    <ul>
+        <div id="agregarEncargo" class="collapse">
+            form agregar encargo
+        </div>
+    </ul>
+    <ul>
+        <div id="verViajes" class="collapse">
+            form ver viajes
+        </div>
+    </ul>
+    <ul>
+        <div id="verEncargos" class="collapse">
+            form ver encargos
+        </div>
+    </ul>
+</div>
 </body>
 </html>
